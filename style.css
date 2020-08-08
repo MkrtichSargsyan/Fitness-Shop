@@ -7,6 +7,11 @@
 :root {
   --color-red: #f42;
   --bg-color-red: #f42;
+  --bg-header:#383838;
+}
+
+.dard{
+  background-color: var(--bg-header);
 }
 
 *,
