@@ -6,6 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "hint": "^6.0.6",
+    "node-sass": "^4.14.1",
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-csstree-validator": "^1.8.0",
@@ -14,7 +15,8 @@
   "scripts": {
     "test": "npm run webhint && npm run stylelint && echo \"✅✅✅ All tests passed ✅✅✅\"",
     "webhint": "npx hint .",
-    "stylelint": "npx stylelint **/*.css"
+    "stylelint": "npx stylelint **/*.css",
+    "sass":"node-sass styles/scss/main.scss styles/css/app.css -w"
   },
   "repository": {
     "type": "git",

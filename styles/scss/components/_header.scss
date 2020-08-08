@@ -1,0 +1,46 @@
+header {
+  .header-logo-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .user-image {
+    width: 35px;
+    height: 35px;
+  }
+
+  p {
+    color: $color-cabaret;
+  }
+
+  img {
+    border-radius: 50%;
+    object-fit: fill;
+  }
+
+  ul {
+    width: 300px;
+    display: flex;
+    align-items: center;
+
+    li:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    &:first-child {
+      justify-self: start;
+
+      li:first-child * {
+        color: $color-cabaret;
+      }
+
+      &:first-child li:hover * {
+        color: rgb(219, 219, 219);
+      }
+    }
+
+    &:last-child {
+      justify-content: flex-end;
+    }
+  }
+}

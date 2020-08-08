@@ -1,4 +1,4 @@
-# Project Name
+# Fitness shop
 
 > One paragraph statement about the project.
 
