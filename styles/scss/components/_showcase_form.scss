@@ -1,0 +1,26 @@
+.showcase-form {
+
+  margin-top: 50px;
+
+  * {
+    height: 100%;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    opacity: 1;
+    border-radius: 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  button {
+    width: 100px;
+
+    &:hover {
+      color: wheat;
+    }
+  }
+
+}

@@ -8,9 +8,17 @@ $color-eclipse:#333333;
 }
 
 .color-grey {
-  background-color: $color-grey; 
+  background-color: $color-grey;
+}
+
+.text-grey {
+  color: $color-grey;
 }
 
 .color-eclipse {
   background-color: $color-eclipse;
+}
+
+.text-eclipse {
+  color: $color-eclipse;
 }
