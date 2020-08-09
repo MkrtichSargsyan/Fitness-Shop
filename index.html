@@ -20,6 +20,7 @@
 
 <body class="main-container">
 
+  <!-- header -->
 
   <header class="color-eclipse fixed-top">
 
@@ -61,39 +62,113 @@
 
   <main>
 
+    <!-- showcase section -->
+
     <section class="showcase">
 
-      <div class="container h-100 d-flex flex-column py-4">
+      <div class="container d-flex flex-column py-4">
         <div class="quote text-eclipse h3 mx-auto text-right">
           <cite>“If you think lifting is dangerous, try being weak. Being weak is dangerous.”</cite><br>
           <span>— Bret Contreras, sports scientist</span>
         </div>
 
-        <form action="" class="showcase-form text-center">
+        <div class="d-flex justify-content-center">
+          <form action="" class="showcase-form">
 
-          <select id="category" name="category" class="">
-            <option value="Nutrition">Nutrition</option>
-            <option value="Dumbells">Dumbells</option>
-            <option value="Resistance Bands">Resistance Bands</option>
 
-          </select>
+            <select id="category" name="category" class="">
+              <option value="Nutrition">Nutrition</option>
+              <option value="Dumbells">Dumbells</option>
+              <option value="Resistance Bands">Resistance Bands</option>
 
-          <input type="text" placeholder="What do you search for?">
-          <input type="text" placeholder="Country">
-          <button type="submit" class="color-eclipse text-grey">Submit</button>
-        </form>
+            </select>
+
+            <input type="text" placeholder="What do you search for?">
+            <input type="text" placeholder="Country">
+            <button type="submit" class="color-eclipse text-grey">Submit</button>
+          </form>
+
+        </div>
+
 
       </div>
 
     </section>
 
-    <section style="height: 2000px;">
-      sdfd
+    <!-- best-sellers section -->
+
+    <section class="bg-light best-sellers pb-5 pt-3">
+      <div class="container d-flex flex-column px-0 border" style="min-height: 100px;">
+
+        <h2 class="text-grey">Best Sellers</h2>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <!-- <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol> -->
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item d-flex justify-content-between active">
+              <img class="d-block p-0 col-6" src="images/dumbell images/d1.jpeg" alt="d1">
+              <div class="d-none d-md-block">
+                <h5>Dumbell 50 kg</h5>
+                <p>If you want to be strong buy this dumbell</p>
+              </div>
+            </div>
+
+            <div class="carousel-item d-flex justify-content-between">
+              <img class="d-block p-0 col-6" src="images/dumbell images/d2.jpg" alt="d2">
+              <div class="d-md-block col-6">
+                <h5>Dumbell 50 kg</h5>
+                <p>If you want to be strong buy this dumbell</p>
+              </div>
+            </div>
+
+            <div class="carousel-item d-flex justify-content-between">
+              <img class="d-block p-0 col-6" src="images/dumbell images/d3.jpg" alt="d3">
+              <div class="d-md-block col-6">
+                <h5>Dumbell 50 kg</h5>
+                <p>If you want to be strong buy this dumbell</p>
+              </div>
+            </div>
+
+          </div>
+
+
+          <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a> -->
+        </div>
+
+      </div>
+    </section>
+
+    <section style="height: 1000px;">
+      dd
     </section>
 
   </main>
 
 
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
 
 </body>
 

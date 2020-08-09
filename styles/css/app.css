@@ -53,7 +53,10 @@ img {
   font-size: 36px; }
 
 .showcase-form {
-  margin-top: 50px; }
+  width: 750px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between; }
   .showcase-form * {
     height: 100%;
     padding: 10px;
@@ -68,11 +71,17 @@ img {
     .showcase-form button:hover {
       color: wheat; }
 
+.carousel-item {
+  height: 250px; }
+  .carousel-item img {
+    object-fit: fill; }
+
 header {
   width: 100%;
   top: 0;
   max-width: 1400px;
   z-index: 1500;
+  margin: 0 auto;
   position: fixed; }
   header .header-logo-img {
     width: 50px;
@@ -134,3 +143,6 @@ header {
     background: #D35266; }
   .showcase > div * {
     z-index: 1000; }
+
+.best-sellers > div {
+  max-width: 750px; }
