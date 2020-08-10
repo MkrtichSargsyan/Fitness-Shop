@@ -9,6 +9,7 @@
 
 #carouselSlides{
 
+
   a span{
     border: 1px solid black;
     border-radius: 50%;
@@ -22,11 +23,11 @@
 }
 
 // left button
-.carousel-control-prev{
-  left: -110px;
+.prev-slide{
+  margin-right: 15vw;
 }
 
 // right button
-.carousel-control-next{
-  right: -110px;
+.next-slide{
+  margin-left: 15vw;
 }

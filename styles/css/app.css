@@ -33,6 +33,9 @@ ul {
   list-style: none;
   margin: 0; }
 
+p {
+  margin: 0; }
+
 a {
   text-decoration: none;
   color: #888888; }
@@ -55,24 +58,21 @@ img {
   font-family: 'Playball', cursive;
   font-size: 36px; }
 
-.showcase-form {
-  width: 750px;
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between; }
-  .showcase-form * {
-    height: 100%;
-    padding: 10px;
-    border: none;
-    background-color: white;
-    opacity: 1;
-    border-radius: 5px; }
-    .showcase-form *:hover {
-      cursor: pointer; }
-  .showcase-form button {
-    width: 100px; }
-    .showcase-form button:hover {
-      color: wheat; }
+.showcase-form * {
+  height: 100%;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  opacity: 1;
+  border-radius: 5px; }
+  .showcase-form *:hover {
+    cursor: pointer; }
+
+.showcase-form button {
+  width: 100px;
+  padding: 7px; }
+  .showcase-form button:hover {
+    color: wheat; }
 
 .carousel-item {
   height: 250px; }
@@ -87,19 +87,35 @@ img {
   #carouselSlides a span:hover {
     background-color: #333333; }
 
-.carousel-control-prev {
-  left: -110px; }
+.prev-slide {
+  margin-right: 15vw; }
 
-.carousel-control-next {
-  right: -110px; }
+.next-slide {
+  margin-left: 15vw; }
+
+.nutrition-segment .heading {
+  border-bottom: 1px solid #888888; }
+
+.nutrition-segment .all-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px; }
 
 header {
+  min-height: 62px;
   width: 100%;
   top: 0;
   max-width: 1400px;
   z-index: 1500;
   margin: 0 auto;
   position: fixed; }
+  @media (min-width: 992px) {
+    header ul {
+      width: 300px; } }
+  @media (max-width: 992px) {
+    header .user-image img {
+      width: 50px;
+      height: 50px; } }
   header .header-logo-img {
     width: 50px;
     height: 50px; }
@@ -112,7 +128,6 @@ header {
     border-radius: 50%;
     object-fit: fill; }
   header ul {
-    width: 300px;
     display: flex;
     align-items: center; }
     header ul li:not(:last-child) {
@@ -146,7 +161,6 @@ header {
 
 .showcase {
   margin-top: 60px;
-  height: 250px;
   background-image: url("../../../images/showcase-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -166,3 +180,36 @@ header {
 
 .best-sellers > div {
   max-width: 750px; }
+
+footer .footer-top {
+  color: #888888; }
+  footer .footer-top .about-page {
+    max-width: 40%; }
+  footer .footer-top .footer-logo {
+    height: 100px;
+    border-radius: 50%; }
+    footer .footer-top .footer-logo .footer-logo-img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px; }
+      footer .footer-top .footer-logo .footer-logo-img img {
+        border-radius: 50%; }
+  footer .footer-top .navigation p,
+  footer .footer-top .categories p {
+    margin-bottom: 10px; }
+  footer .footer-top .navigation div,
+  footer .footer-top .categories div {
+    border-top: 1px solid #D35266; }
+  footer .footer-top .navigation h4,
+  footer .footer-top .country-language h4,
+  footer .footer-top .categories h4 {
+    color: #D35266; }
+  footer .footer-top .country-language p,
+  footer .footer-top .country-language h4 {
+    margin: 0; }
+  footer .footer-top .country-language div > span {
+    width: 100px;
+    padding: 10px 0;
+    margin-left: 20px;
+    border: 1px solid #888888;
+    text-align: center; }

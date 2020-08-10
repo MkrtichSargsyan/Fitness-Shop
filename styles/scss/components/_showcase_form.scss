@@ -1,8 +1,4 @@
 .showcase-form {
-  width: 750px;
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
 
   * {
     height: 100%;
@@ -19,10 +15,10 @@
 
   button {
     width: 100px;
+    padding: 7px;
 
     &:hover {
       color: wheat;
     }
   }
-
 }
