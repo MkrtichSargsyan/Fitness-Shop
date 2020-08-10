@@ -1,6 +1,9 @@
 .color-cabaret {
   background-color: #D35266; }
 
+.text-cabaret {
+  color: #D35266; }
+
 .color-grey {
   background-color: #888888; }
 
@@ -74,7 +77,21 @@ img {
 .carousel-item {
   height: 250px; }
   .carousel-item img {
-    object-fit: fill; }
+    object-fit: cover; }
+
+#carouselSlides a span {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #888888; }
+  #carouselSlides a span:hover {
+    background-color: #333333; }
+
+.carousel-control-prev {
+  left: -110px; }
+
+.carousel-control-next {
+  right: -110px; }
 
 header {
   width: 100%;
@@ -111,6 +128,9 @@ header {
 
 .color-cabaret {
   background-color: #D35266; }
+
+.text-cabaret {
+  color: #D35266; }
 
 .color-grey {
   background-color: #888888; }
