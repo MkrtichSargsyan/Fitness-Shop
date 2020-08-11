@@ -16,9 +16,10 @@
   button {
     width: 100px;
     padding: 7px;
+    outline: none;
 
     &:hover {
-      color: wheat;
+      color: white;
     }
   }
 }

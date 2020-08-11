@@ -5,4 +5,10 @@
 .logo-font {
   font-family: 'Playball', cursive;
   font-size: 36px;
+
+  @media (max-width: 600px) {
+    & {
+      font-size: 24px
+    }
+  }
 }

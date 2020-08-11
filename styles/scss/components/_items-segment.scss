@@ -1,5 +1,9 @@
 .items-segment {
 
+  .card{
+    box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.64);
+  }
+
   .heading {
     border-bottom: 1px solid $color-grey;
   }

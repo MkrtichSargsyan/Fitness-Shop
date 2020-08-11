@@ -1,8 +1,15 @@
 @import "../base/variables";
 
-.showcase {
-  margin-top: 60px;
+.showcase{
   background-image: url("../../../images/showcase-image.jpg");
+}
+
+.search-showcase{
+  background-image: url("../../../images/arnold.jpg");
+}
+
+.showcase, .search-showcase {
+  margin-top: 60px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
