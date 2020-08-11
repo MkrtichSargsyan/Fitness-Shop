@@ -99,9 +99,9 @@
     </section>
 
     <section class="result bg-light">
-      <div class="container border d-flex">
+      <div class="container border d-flex p-0">
 
-        <div class="filter col-3 pt-3"> 
+        <aside class="filter col-3 pt-3">
 
           <div class="d-flex justify-content-between">
             <div class="mr-2">
@@ -116,17 +116,17 @@
 
           <div class="filter-type">
             <h5>Type</h5>
-            <div >
+            <div>
               <div>
                 <input type="checkbox" id="entire" name="entire" checked>
                 <label for="entire">Entire Place </label>
               </div>
               <div>
-                <input type="checkbox" id="private" name="private" >
+                <input type="checkbox" id="private" name="private">
                 <label for="private">Private Room</label>
               </div>
               <div>
-                <input type="checkbox" id="shared" name="shared" >
+                <input type="checkbox" id="shared" name="shared">
                 <label for="shared">Shared Room</label>
               </div>
             </div>
@@ -134,17 +134,17 @@
 
           <div class="filter-type">
             <h5>Size</h5>
-            <div >
+            <div>
               <div>
                 <input type="checkbox" id="small" name="small" checked>
                 <label for="small">2 - 4 rooms</label>
               </div>
               <div>
-                <input type="checkbox" id="big" name="bog" >
+                <input type="checkbox" id="big" name="bog">
                 <label for="big">5 + rooms</label>
               </div>
               <div>
-                <input type="checkbox" id="custom" name="custom" >
+                <input type="checkbox" id="custom" name="custom">
                 <label for="custom">Custom</label>
               </div>
             </div>
@@ -152,30 +152,93 @@
 
           <div class="filter-type">
             <h5>Price Range</h5>
-            <div >
+            <div>
               <div>
                 <input type="checkbox" id="cheap" name="cheap" checked>
                 <label for="cheap">10$ - 100$</label>
               </div>
               <div>
-                <input type="checkbox" id="mid" name="mid" >
+                <input type="checkbox" id="mid" name="mid">
                 <label for="mid">100$ - 500$</label>
               </div>
               <div>
-                <input type="checkbox" id="exp" name="exp" >
+                <input type="checkbox" id="exp" name="exp">
                 <label for="exp">500$ - 1000$</label>
               </div>
               <div>
-                <input type="checkbox" id="extra" name="extra" >
+                <input type="checkbox" id="extra" name="extra">
                 <label for="extra">+1000$</label>
               </div>
             </div>
           </div>
 
-        </div>
+        </aside>
 
         <div class="finded-items col-9">
-          right
+          <p class="py-3">138 results for "Flat" Search at San Francisco in Category Real Estate</p>
+
+          <div class="d-flex border py-3 my-2">
+            <div class="col-md-5 col-lg-4">
+              <img src="images/logo.jpg" alt="">
+            </div>
+            <article class="col-md-7 col-lg-8 d-flex flex-column justify-content-center">
+              <h4 class="text-eclipse">Flat with big living</h4>
+              <p class="text-cabaret">200 M, Rent</p>
+              <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloremque officia, quas ad
+                aspernatur
+                ipsa molestiae. </p>
+              <p class="mb-2">
+                <strong>Location</strong>Lorem ipsum dolor sit amet consectetur.
+              </p>
+              <div class="d-flex justify-content-between mt-4">
+                <p>23 Nov. 2020</p>
+                <div>
+                  <button class="color-cabaret text-white p-2 border-0 btn">Give a Call</button>
+                  <button class="color-cabaret text-white p-2 border-0 btn">1200$</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="d-flex border py-3 my-2">
+            <div class="col-4">
+              <img src="images/logo.jpg" alt="">
+            </div>
+            <article class="col-8 d-flex flex-column justify-content-center">
+              <h4 class="text-eclipse">Flat with big living</h4>
+              <p class="text-cabaret">200 M, Rent</p>
+              <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloremque officia, quas ad
+                aspernatur
+                ipsa molestiae. </p>
+              <p class="mb-2">
+                <strong>Location</strong>Lorem ipsum dolor sit amet consectetur.
+              </p>
+              <div class="d-flex justify-content-between mt-4">
+                <p>23 Nov. 2020</p>
+                <div>
+                  <button class="color-cabaret text-white p-2 border-0 btn">Give a Call</button>
+                  <button class="color-cabaret text-white p-2 border-0 btn">1200$</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- pagination -->
+
+          <div class="d-flex justify-content-center py-4">
+            <ul class="pagination">
+              <li class="page-item mr-2"><a class="page-link text-grey" href="#">1</a></li>
+              <li class="page-item mr-2"><a class="page-link text-white color-cabaret" href="#">2</a></li>
+              <li class="page-item mr-2"><a class="page-link text-grey" href="#">3</a></li>
+              <li class="page-item mr-2"><a class="page-link text-grey" href="#">4</a></li>
+              <li class="page-item mr-2"><a class="page-link text-grey" href="#">5</a></li>
+              <li class="page-item mr-2"><a class="page-link text-grey" href="#">6</a></li>
+              <li class="page-item mr-2"><a class="page-link border-0 bg-light" href="#">...</a></li>
+              <li class="page-item mr-2"><a class="page-link text-grey" href="#">7</a></li>
+            </ul>
+          </div>
+
+
         </div>
 
       </div>

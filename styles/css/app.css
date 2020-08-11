@@ -212,6 +212,9 @@ header {
 
 .result .finded-items {
   border-left: 1px solid #000; }
+  .result .finded-items button:hover {
+    cursor: pointer;
+    background-color: #d46475; }
 
 .filter h5 {
   border-bottom: 1px solid #888888;
