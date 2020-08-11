@@ -197,8 +197,6 @@ header {
 
 footer .footer-top {
   color: #888888; }
-  footer .footer-top .about-page {
-    max-width: 40%; }
   footer .footer-top .footer-logo {
     height: 100px;
     border-radius: 50%; }
@@ -211,19 +209,21 @@ footer .footer-top {
   footer .footer-top .navigation p,
   footer .footer-top .categories p {
     margin-bottom: 10px; }
-  footer .footer-top .navigation div,
-  footer .footer-top .categories div {
+  footer .footer-top .navigation div > div,
+  footer .footer-top .categories div > div {
     border-top: 1px solid #D35266; }
-  footer .footer-top .navigation h4,
-  footer .footer-top .country-language h4,
-  footer .footer-top .categories h4 {
+  footer .footer-top .navigation h5,
+  footer .footer-top .country-language h5,
+  footer .footer-top .categories h5 {
     color: #D35266; }
   footer .footer-top .country-language p,
-  footer .footer-top .country-language h4 {
+  footer .footer-top .country-language h5 {
     margin: 0; }
   footer .footer-top .country-language div > span {
     width: 100px;
     padding: 10px 0;
-    margin-left: 20px;
     border: 1px solid #888888;
     text-align: center; }
+
+footer .footer-bottom {
+  border-top: 1px solid #000; }

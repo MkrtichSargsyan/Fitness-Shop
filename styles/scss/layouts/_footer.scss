@@ -4,10 +4,6 @@ footer {
     color: $color-grey;
 
 
-    .about-page{
-      max-width: 40%;
-    }
-
     .footer-logo {
       height: 100px;
       border-radius: 50%;
@@ -27,11 +23,11 @@ footer {
     .navigation,
     .categories {
 
-      p{
+      p {
         margin-bottom: 10px;
       }
 
-      & div {
+      & div > div{
         border-top: 1px solid $color-cabaret;
       }
     }
@@ -40,7 +36,7 @@ footer {
     .country-language,
     .categories {
 
-      & h4 {
+      & h5 {
         color: $color-cabaret;
 
       }
@@ -50,17 +46,20 @@ footer {
 
 
       p,
-      h4 {
+      h5 {
         margin: 0;
       }
 
-      & div > span {
+      & div>span {
         width: 100px;
         padding: 10px 0;
-        margin-left: 20px;
         border: 1px solid $color-grey;
         text-align: center;
       }
     }
+  }
+
+  .footer-bottom{ 
+    border-top: 1px solid #000;
   }
 }
