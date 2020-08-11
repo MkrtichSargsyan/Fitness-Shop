@@ -113,9 +113,11 @@ header {
     header ul {
       width: 300px; } }
   @media (max-width: 992px) {
-    header .user-image img {
-      width: 50px;
-      height: 50px; } }
+    header {
+      display: flex; }
+      header li.user-image {
+        width: 50px;
+        height: 50px; } }
   header .header-logo-img {
     width: 50px;
     height: 50px; }
