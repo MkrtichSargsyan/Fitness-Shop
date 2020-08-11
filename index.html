@@ -24,7 +24,7 @@
 
   <header class="color-eclipse fixed-top">
 
-    <nav class="container text-white d-flex justify-content-between align-items-center py-1">
+    <nav class="container text-white d-flex justify-content-around justify-content-sm-between align-items-center py-1">
       <ul class="d-flex left-nav">
         <li>
           <i class="fas fa-home"></i>
@@ -67,9 +67,12 @@
     <section class="showcase">
 
       <div class="d-flex flex-column py-4">
-        <div class="container quote text-eclipse h3 mx-auto text-right">
-          <cite>“If you think lifting is dangerous, try being weak. Being weak is dangerous.”</cite><br>
-          <span>— Bret Contreras, sports scientist</span>
+        <div class="container quote text-eclipse h3 mx-auto text-center">
+          <div class="d-inline-block text-right">
+            <cite class="text-center">“If you think lifting is dangerous, try being weak. Being weak is
+              dangerous.”</cite><br>
+            <span>— Bret Contreras, sports scientist</span>
+          </div>
         </div>
 
         <form action="" class="showcase-form px-5 px-md-0 my-5 mx-md-auto d-flex flex-column flex-md-row">
@@ -83,7 +86,8 @@
 
           <input class="showcase-search mr-md-2 my-2 my-md-0" type="text" placeholder="What do you search for?">
           <input class="showcase-country mr-md-2" type="text" placeholder="Country">
-          <button type="submit" class="showcase-submit-button color-eclipse text-grey mt-3 mt-md-0 mx-auto">Submit</button>
+          <button type="submit"
+            class="showcase-submit-button color-eclipse text-grey mt-3 mt-md-0 mx-auto">Submit</button>
         </form>
 
       </div>
@@ -92,59 +96,59 @@
 
     <!-- best-sellers section -->
 
-    <section class="best-sellers pb-5 pt-3">
+    <section class="best-sellers pb-5 pt-3  d-none d-md-block">
       <div class="container">
 
         <div class=" d-flex flex-column px-0">
 
           <h2 class="text-grey">Best Sellers</h2>
 
-          <div class="row d-none d-md-block">
+          <div class="row">
             <div id="carouselSlides" class="carousel slide " data-ride="carousel">
               <div class="carousel-inner mx-auto w-75">
 
                 <div class="carousel-item active">
                   <div class="d-flex h-100 no-gutters">
                     <img src="images/dumbell images/d2.jpg" class="slider-img col-6" alt="d2">
-                    <div class="d-flex flex-column pl-4 col-6 justify-content-center no-gutters">
-                      <h4 class="card-title">dumbell 2</h4>
+                    <article class="d-flex flex-column pl-4 col-6 justify-content-between no-gutters">
+                      <h4 class="card-title text-center">Dumbell</h4>
                       <p class="card-text text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
                         laudantium laborum culpa officiis delectus ex odio nostrum impedit autem quidem.</p>
-                      <div class="d-flex justify-content-start">
-                        <button type="submit" value="Search" class="px-3 py-2 mx-1">$49</button>
-                        <button type="submit" value="Search" class="px-3 py-2 mx-1">Pre-Order</button>
+                      <div class="d-flex justify-content-center">
+                        <button type="submit" class="px-3 py-2 mx-1">$10</button>
+                        <button type="submit" class="px-3 py-2 mx-1">Buy</button>
                       </div>
-                    </div>
+                    </article>
                   </div>
                 </div>
 
                 <div class="carousel-item">
                   <div class="d-flex h-100 no-gutters">
-                    <img src="images/dumbell images/d1.jpeg" class="slider-img col-6" alt="d2">
-                    <div class="d-flex flex-column pl-4 col-6 justify-content-center">
-                      <h4 class="card-title">dumbell 2</h4>
+                    <img src="images/gym clothes/c2.jpg" class="slider-img col-6" alt="clothe">
+                    <article class="d-flex flex-column pl-4 col-6 justify-content-between no-gutters">
+                      <h4 class="card-title text-center">Clothes</h4>
                       <p class="card-text text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
                         laudantium laborum culpa officiis delectus ex odio nostrum impedit autem quidem.</p>
-                      <div class="d-flex justify-content-start">
-                        <button type="submit" value="Search" class="px-3 py-2 mx-1">$49</button>
-                        <button type="submit" value="Search" class="px-3 py-2 mx-1">Pre-Order</button>
+                      <div class="d-flex justify-content-center">
+                        <button type="submit" class="px-3 py-2 mx-1">$10</button>
+                        <button type="submit" class="px-3 py-2 mx-1">Buy</button>
                       </div>
-                    </div>
+                    </article>
                   </div>
                 </div>
 
                 <div class="carousel-item">
                   <div class="d-flex h-100 no-gutters">
-                    <img src="images/dumbell images/d3.jpg" class="slider-img col-6" alt="d2">
-                    <div class="d-flex flex-column pl-4 col-6 justify-content-center">
-                      <h4 class="card-title">dumbell 2</h4>
+                    <img src="images/nutrition images/n2.jpeg" class="slider-img col-6" alt="d2">
+                    <article class="d-flex flex-column pl-4 col-6 justify-content-between no-gutters">
+                      <h4 class="card-title text-center">Nutrition</h4>
                       <p class="card-text text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
                         laudantium laborum culpa officiis delectus ex odio nostrum impedit autem quidem.</p>
-                      <div class="d-flex justify-content-start">
-                        <button type="submit" value="Search" class="px-3 py-2 mx-1">$49</button>
-                        <button type="submit" value="Search" class="px-3 py-2 mx-1">Pre-Order</button>
+                      <div class="d-flex justify-content-center">
+                        <button type="submit" class="px-3 py-2 mx-1">$10</button>
+                        <button type="submit" class="px-3 py-2 mx-1">Buy</button>
                       </div>
-                    </div>
+                    </article>
                   </div>
                 </div>
 
@@ -169,231 +173,285 @@
     <section class="bg-light">
       <div class="container border">
 
-
         <!-- nutrition items -->
-        <div class="nutrition-segment">
-          <div class="heading d-flex">
-            <i class="fab fa-nutritionix mr-2"></i>
-            <p><strong>Nutrition</strong> (Carbohydrates,Proteins,Energy drinks ...)</p>
+        <div class="items-segment my-5">
+
+          <div class="heading d-flex mb-4 align-items-baseline pb-2">
+            <i class="fab fa-nutritionix mr-4 fa-2x"></i>
+            <p>
+              <strong class="h3">Nutrition</strong>
+              <span class="d-none d-md-inline">(Carbohydrates,Proteins,Energy drinks ...)</span>
+            </p>
           </div>
 
           <div class="all-items">
-            <div class="card">
-              <img src="images/dumbell images/d1.jpeg" alt="dmb">
-              <p class="card-title">Lorem ipsum dolor sit amet.</p>
-              <p class="card-subtitle">Lorem, ipsum dolor.</p>
-              <p class="used">Used</p>
-              <div>
-                <span><i class="far fa-plus-square"></i></span>
-                <span>450$</span>
-              </div>
 
-            </div>
             <div class="card">
-              <img src="images/dumbell images/d1.jpeg" alt="dmb">
-              <p class="card-title">Lorem ipsum dolor sit amet.</p>
-              <p class="card-subtitle">Lorem, ipsum dolor.</p>
-              <p class="used">Used</p>
-              <div>
-                <span><i class="far fa-plus-square"></i></span>
-                <span>450$</span>
+              <div class="all-items-image-container">
+                <img src="images/nutrition images/n1.jpeg" alt="dmb">
               </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
+              </div>
+            </div>
 
-            </div>
             <div class="card">
-              <img src="images/dumbell images/d1.jpeg" alt="dmb">
-              <p class="card-title">Lorem ipsum dolor sit amet.</p>
-              <p class="card-subtitle">Lorem, ipsum dolor.</p>
-              <p class="used">Used</p>
-              <div>
-                <span><i class="far fa-plus-square"></i></span>
-                <span>450$</span>
+              <div class="all-items-image-container">
+                <img src="images/nutrition images/n2.jpeg" alt="dmb">
               </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
+              </div>
+            </div>
 
-            </div>
             <div class="card">
-              <img src="images/dumbell images/d1.jpeg" alt="dmb">
-              <p class="card-title">Lorem ipsum dolor sit amet.</p>
-              <p class="card-subtitle">Lorem, ipsum dolor.</p>
-              <p class="used">Used</p>
-              <div>
-                <span><i class="far fa-plus-square"></i></span>
-                <span>450$</span>
+              <div class="all-items-image-container">
+                <img src="images/nutrition images/n3.png" alt="dmb">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
               </div>
             </div>
+
+            <div class="card">
+              <div class="all-items-image-container">
+                <img src="images/nutrition images/n4.jpeg" alt="dmb">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
+              </div>
+            </div>
+
           </div>
 
         </div>
 
         <!-- dumbell items -->
 
-        <div class="nutrition-segment">
-          <div class="heading d-flex">
-            <i class="fab fa-nutritionix mr-2"></i>
-            <p><strong>Dumbells</strong> (Carbohydrates,Proteins,Energy drinks ...)</p>
+        <div class="items-segment mb-5">
+
+          <div class="heading d-flex mb-4 align-items-baseline pb-2">
+            <i class="fab fa-nutritionix mr-4 fa-2x"></i>
+            <p>
+              <strong class="h3">Dumbells</strong>
+              <span class="d-none d-md-inline">(Fixed,Adjustable,Kettlebells ...)</span>
+            </p>
           </div>
 
           <div class="all-items">
-            <div class="card">
-              <img src="images/dumbell images/d1.jpeg" alt="dmb">
-              <p class="card-title">Lorem ipsum dolor sit amet.</p>
-              <p class="card-subtitle">Lorem, ipsum dolor.</p>
-              <p class="used">Used</p>
-              <div>
-                <span><i class="far fa-plus-square"></i></span>
-                <span>450$</span>
-              </div>
 
-            </div>
             <div class="card">
-              <img src="images/dumbell images/d1.jpeg" alt="dmb">
-              <p class="card-title">Lorem ipsum dolor sit amet.</p>
-              <p class="card-subtitle">Lorem, ipsum dolor.</p>
-              <p class="used">Used</p>
-              <div>
-                <span><i class="far fa-plus-square"></i></span>
-                <span>450$</span>
+              <div class="all-items-image-container">
+                <img src="images/dumbell images/d1.jpeg" alt="dmb">
               </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">New</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">2000$</span>
+              </div>
+            </div>
 
-            </div>
             <div class="card">
-              <img src="images/dumbell images/d1.jpeg" alt="dmb">
-              <p class="card-title">Lorem ipsum dolor sit amet.</p>
-              <p class="card-subtitle">Lorem, ipsum dolor.</p>
-              <p class="used">Used</p>
-              <div>
-                <span><i class="far fa-plus-square"></i></span>
-                <span>450$</span>
+              <div class="all-items-image-container">
+                <img src="images/dumbell images/d2.jpg" alt="dmb">
               </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">New</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">3234$</span>
+              </div>
+            </div>
 
-            </div>
             <div class="card">
-              <img src="images/dumbell images/d1.jpeg" alt="dmb">
-              <p class="card-title">Lorem ipsum dolor sit amet.</p>
-              <p class="card-subtitle">Lorem, ipsum dolor.</p>
-              <p class="used">Used</p>
-              <div>
-                <span><i class="far fa-plus-square"></i></span>
-                <span>450$</span>
+              <div class="all-items-image-container">
+                <img src="images/dumbell images/d3.jpg" alt="dmb">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">New</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">4320$</span>
               </div>
             </div>
+
+            <div class="card">
+              <div class="all-items-image-container">
+                <img src="images/dumbell images/d4.jpg" alt="dmb">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">New</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">550$</span>
+              </div>
+            </div>
+
           </div>
 
         </div>
 
         <!-- Gym clothes -->
 
-        <div class="nutrition-segment">
-          <div class="heading d-flex">
-            <i class="fab fa-nutritionix mr-2"></i>
-            <p><strong>Gym</strong> (Carbohydrates,Proteins,Energy drinks ...)</p>
+        <div class="items-segment my-5">
+
+          <div class="heading d-flex mb-4 align-items-baseline pb-2">
+            <i class="fab fa-nutritionix mr-4 fa-2x"></i>
+            <p>
+              <strong class="h3">Gym clothes</strong>
+              <span class="d-none d-md-inline">(T-Shirts,Sweatshirts,Sweatpants ...)</span>
+            </p>
           </div>
 
           <div class="all-items">
-            <div class="card">
-              <img src="images/dumbell images/d1.jpeg" alt="dmb">
-              <p class="card-title">Lorem ipsum dolor sit amet.</p>
-              <p class="card-subtitle">Lorem, ipsum dolor.</p>
-              <p class="used">Used</p>
-              <div>
-                <span><i class="far fa-plus-square"></i></span>
-                <span>450$</span>
-              </div>
 
-            </div>
             <div class="card">
-              <img src="images/dumbell images/d1.jpeg" alt="dmb">
-              <p class="card-title">Lorem ipsum dolor sit amet.</p>
-              <p class="card-subtitle">Lorem, ipsum dolor.</p>
-              <p class="used">Used</p>
-              <div>
-                <span><i class="far fa-plus-square"></i></span>
-                <span>450$</span>
+              <div class="all-items-image-container">
+                <img src="images/gym clothes/c1.jpeg" alt="clothes">
               </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
+              </div>
+            </div>
 
-            </div>
             <div class="card">
-              <img src="images/dumbell images/d1.jpeg" alt="dmb">
-              <p class="card-title">Lorem ipsum dolor sit amet.</p>
-              <p class="card-subtitle">Lorem, ipsum dolor.</p>
-              <p class="used">Used</p>
-              <div>
-                <span><i class="far fa-plus-square"></i></span>
-                <span>450$</span>
+              <div class="all-items-image-container">
+                <img src="images/gym clothes/c2.jpg" alt="clothes">
               </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
+              </div>
+            </div>
 
-            </div>
             <div class="card">
-              <img src="images/dumbell images/d1.jpeg" alt="dmb">
-              <p class="card-title">Lorem ipsum dolor sit amet.</p>
-              <p class="card-subtitle">Lorem, ipsum dolor.</p>
-              <p class="used">Used</p>
-              <div>
-                <span><i class="far fa-plus-square"></i></span>
-                <span>450$</span>
+              <div class="all-items-image-container">
+                <img src="images/gym clothes/c3.jpg" alt="clothes">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
               </div>
             </div>
+
+            <div class="card">
+              <div class="all-items-image-container">
+                <img src="images/gym clothes/c4.jpg" alt="clothes">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
+              </div>
+            </div>
+
           </div>
 
         </div>
 
-        <!-- pull up bars -->
+        <!-- Exercise machines -->
 
-        <div class="nutrition-segment">
-          <div class="heading d-flex">
-            <i class="fab fa-nutritionix mr-2"></i>
-            <p><strong>Gym</strong> (Carbohydrates,Proteins,Energy drinks ...)</p>
+        <div class="items-segment my-5">
+
+          <div class="heading d-flex mb-4 align-items-baseline pb-2">
+            <i class="fab fa-nutritionix mr-4 fa-2x"></i>
+            <p>
+              <strong class="h3">Exercise Machines</strong>
+              <span class="d-none d-md-inline">(Stationary bicycle,Treadmill,Ankle weights ...)</span>
+            </p>
           </div>
 
           <div class="all-items">
-            <div class="card">
-              <img src="images/dumbell images/d1.jpeg" alt="dmb">
-              <p class="card-title">Lorem ipsum dolor sit amet.</p>
-              <p class="card-subtitle">Lorem, ipsum dolor.</p>
-              <p class="used">Used</p>
-              <div>
-                <span><i class="far fa-plus-square"></i></span>
-                <span>450$</span>
-              </div>
 
-            </div>
             <div class="card">
-              <img src="images/dumbell images/d1.jpeg" alt="dmb">
-              <p class="card-title">Lorem ipsum dolor sit amet.</p>
-              <p class="card-subtitle">Lorem, ipsum dolor.</p>
-              <p class="used">Used</p>
-              <div>
-                <span><i class="far fa-plus-square"></i></span>
-                <span>450$</span>
+              <div class="all-items-image-container">
+                <img src="images/exercise machines/m1.webp" alt="machines">
               </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
+              </div>
+            </div>
 
-            </div>
             <div class="card">
-              <img src="images/dumbell images/d1.jpeg" alt="dmb">
-              <p class="card-title">Lorem ipsum dolor sit amet.</p>
-              <p class="card-subtitle">Lorem, ipsum dolor.</p>
-              <p class="used">Used</p>
-              <div>
-                <span><i class="far fa-plus-square"></i></span>
-                <span>450$</span>
+              <div class="all-items-image-container">
+                <img src="images/exercise machines/m2.webp" alt="machines">
               </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
+              </div>
+            </div>
 
-            </div>
             <div class="card">
-              <img src="images/dumbell images/d1.jpeg" alt="dmb">
-              <p class="card-title">Lorem ipsum dolor sit amet.</p>
-              <p class="card-subtitle">Lorem, ipsum dolor.</p>
-              <p class="used">Used</p>
-              <div>
-                <span><i class="far fa-plus-square"></i></span>
-                <span>450$</span>
+              <div class="all-items-image-container">
+                <img src="images/exercise machines/m3.jpeg" alt="machines">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
               </div>
             </div>
+
+            <div class="card">
+              <div class="all-items-image-container">
+                <img src="images/exercise machines/m4.jpeg" alt="machines">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
+              </div>
+            </div>
+
           </div>
 
         </div>
 
-      </div>
     </section>
 
     <!-- <footer class="color-eclipse py-4">

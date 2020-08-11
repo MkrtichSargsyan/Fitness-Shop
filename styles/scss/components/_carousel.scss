@@ -1,33 +1,35 @@
-.carousel-item{
+.carousel-item {
   height: 250px;
 
-  img{
+  img {
     object-fit: cover;
   }
 }
 
 
-#carouselSlides{
+#carouselSlides {
 
 
-  a span{
+  a span {
     border: 1px solid black;
     border-radius: 50%;
     padding: 10px;
     background-color: $color-grey;
 
-    &:hover{
+    &:hover {
       background-color: $color-eclipse;
     }
   }
-}
 
-// left button
-.prev-slide{
-  margin-right: 15vw;
-}
+  button {
+    border-radius: 5px;
+    background-color: $color-cabaret;
+    border: none;
 
-// right button
-.next-slide{
-  margin-left: 15vw;
+    &:hover {
+      cursor: pointer;
+      background-color: #d68d98;
+    }
+  }
+
 }

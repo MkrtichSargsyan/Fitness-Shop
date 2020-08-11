@@ -23,7 +23,8 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  outline: none; }
 
 .main-container {
   max-width: 1400px;
@@ -87,19 +88,27 @@ img {
   #carouselSlides a span:hover {
     background-color: #333333; }
 
-.prev-slide {
-  margin-right: 15vw; }
+#carouselSlides button {
+  border-radius: 5px;
+  background-color: #D35266;
+  border: none; }
+  #carouselSlides button:hover {
+    cursor: pointer;
+    background-color: #d68d98; }
 
-.next-slide {
-  margin-left: 15vw; }
-
-.nutrition-segment .heading {
+.items-segment .heading {
   border-bottom: 1px solid #888888; }
 
-.nutrition-segment .all-items {
+.items-segment .all-items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px; }
+  .items-segment .all-items .all-items-image-container {
+    width: 100%;
+    height: 150px; }
+  @media only screen and (max-width: 991px) {
+    .items-segment .all-items {
+      grid-template-columns: 1fr 1fr; } }
 
 header {
   min-height: 62px;
@@ -179,6 +188,9 @@ header {
     background: #D35266; }
   .showcase > div * {
     z-index: 1000; }
+  @media only screen and (max-width: 767px) {
+    .showcase .quote {
+      font-size: 18px; } }
 
 .best-sellers > div {
   max-width: 750px; }

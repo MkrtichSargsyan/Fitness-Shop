@@ -1,4 +1,4 @@
-.nutrition-segment {
+.items-segment {
 
   .heading {
     border-bottom: 1px solid $color-grey;
@@ -8,5 +8,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
+
+    & .all-items-image-container{
+      width: 100%;
+      height: 150px;
+    }
+
+    @media only screen and (max-width: 991px) {
+      & {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
   }
 }
