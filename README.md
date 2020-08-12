@@ -3,7 +3,7 @@
 > This project is for selling gym goods.
 
 
-![screenshot](./screenshot.png)
+[screenshot]()
 
 
 > This project is based on an online shop for electronics. Design is followed from this website https://www.behance.net/gallery/24796463/ZATTIX , but instead of a shop of electronics I created gym goods selling website
@@ -16,9 +16,19 @@
 - Scss
 - Bootstrap 4
 
+## Watch a video presentation of the project 
+
+[watch loom video]('https://www.loom.com/share/8ed08e815f2645f2b1787a35f2c83cb6').
+
+
 ## Live Demo
 
-[Live Demo Link](https://mkrtichsargsyan.github.io/Fitness-Shop/)
+[Live Demo Link for index.html](https://mkrtichsargsyan.github.io/Fitness-Shop/)
+
+[Live Demo Link for search-page.html](https://rawcdn.githack.com/MkrtichSargsyan/Fitness-Shop/11cfdd96c0ecbe3853f55077931a7a37baf87db5/search-page.html)
+
+
+
 
 ## To get a local copy up and running follow these simple example steps.
 
