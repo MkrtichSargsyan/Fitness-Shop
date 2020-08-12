@@ -215,11 +215,19 @@ header {
   .result .finded-items button:hover {
     cursor: pointer;
     background-color: #d46475; }
+  @media (max-width: 767px) {
+    .result .finded-items {
+      border: none; } }
 
 .filter h5 {
   border-bottom: 1px solid #888888;
   margin: 20px 0;
   padding-bottom: 20px; }
+
+#my-accordion button:active,
+#my-accordion button:focus {
+  text-decoration: none;
+  color: #D35266; }
 
 footer .footer-top {
   color: #888888; }

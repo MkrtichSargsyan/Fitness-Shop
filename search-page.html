@@ -98,12 +98,114 @@
 
     </section>
 
+    <!-- result section -->
+
     <section class="result bg-light">
-      <div class="container border d-flex p-0">
+      <div class="container border d-flex flex-column flex-md-row p-0">
 
-        <aside class="filter col-3 pt-3">
+        <!-- accordeon -->
 
-          <div class="d-flex justify-content-between">
+        <div class="accordion col-12 d-md-none pt-2" id="my-accordion">
+
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link text-cabaret" type="button" data-toggle="collapse" data-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Type
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#my-accordion">
+              <div class="filter-type ml-4 p-3">
+
+                <div>
+                  <input type="checkbox" id="entire" name="entire" checked>
+                  <label for="entire">Entire Place </label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="private" name="private">
+                  <label for="private">Private Room</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="shared" name="shared">
+                  <label for="shared">Shared Room</label>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed text-cabaret" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  Size
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#my-accordion">
+              <div class="filter-type ml-4 p-3">
+                <div>
+                  <input type="checkbox" id="small" name="small" checked>
+                  <label for="small">2 - 4 rooms</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="big" name="bog">
+                  <label for="big">5 + rooms</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="custom" name="custom">
+                  <label for="custom">Custom</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed text-cabaret" type="button" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  Price Range
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#my-accordion">
+              <div class="filter-type ml-4 p-3">
+                <div>
+                  <input type="checkbox" id="cheap" name="cheap" checked>
+                  <label for="cheap">10$ - 100$</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="mid" name="mid">
+                  <label for="mid">100$ - 500$</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="exp" name="exp">
+                  <label for="exp">500$ - 1000$</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="extra" name="extra">
+                  <label for="extra">+1000$</label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- filter -->
+
+        <aside class="filter d-none d-md-block col-md-3 pt-3">
+
+          <!-- <div class="d-flex justify-content-between">
             <div class="mr-2">
               <input type="checkbox" id="rent" name="rent" checked>
               <label for="rent">Rent</label>
@@ -112,7 +214,7 @@
               <input type="checkbox" id="Ownership" name="Ownership">
               <label for="Ownership">Ownership</label>
             </div>
-          </div>
+          </div> -->
 
           <div class="filter-type">
             <h5>Type</h5>
@@ -174,10 +276,12 @@
 
         </aside>
 
-        <div class="finded-items col-9">
+        <!-- finded - items -->
+
+        <div class="finded-items col-md-9">
           <p class="py-3">138 results for "Flat" Search at San Francisco in Category Real Estate</p>
 
-          <div class="d-flex border py-3 my-2">
+          <div class="d-flex border py-3 my-2 flex-column flex-md-row">
             <div class="col-md-5 col-lg-4">
               <img src="images/logo.jpg" alt="">
             </div>
@@ -223,6 +327,55 @@
             </article>
           </div>
 
+
+          <div class="d-flex border py-3 my-2 flex-column flex-md-row">
+            <div class="col-md-5 col-lg-4">
+              <img src="images/logo.jpg" alt="">
+            </div>
+            <article class="col-md-7 col-lg-8 d-flex flex-column justify-content-center">
+              <h4 class="text-eclipse">Flat with big living</h4>
+              <p class="text-cabaret">200 M, Rent</p>
+              <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloremque officia, quas ad
+                aspernatur
+                ipsa molestiae. </p>
+              <p class="mb-2">
+                <strong>Location</strong>Lorem ipsum dolor sit amet consectetur.
+              </p>
+              <div class="d-flex justify-content-between mt-4">
+                <p>23 Nov. 2020</p>
+                <div>
+                  <button class="color-cabaret text-white p-2 border-0 btn">Give a Call</button>
+                  <button class="color-cabaret text-white p-2 border-0 btn">1200$</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="d-flex border py-3 my-2 flex-column flex-md-row">
+            <div class="col-md-5 col-lg-4">
+              <img src="images/logo.jpg" alt="">
+            </div>
+            <article class="col-md-7 col-lg-8 d-flex flex-column justify-content-center">
+              <h4 class="text-eclipse">Flat with big living</h4>
+              <p class="text-cabaret">200 M, Rent</p>
+              <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloremque officia, quas ad
+                aspernatur
+                ipsa molestiae. </p>
+              <p class="mb-2">
+                <strong>Location</strong>Lorem ipsum dolor sit amet consectetur.
+              </p>
+              <div class="d-flex justify-content-between mt-4">
+                <p>23 Nov. 2020</p>
+                <div>
+                  <button class="color-cabaret text-white p-2 border-0 btn">Give a Call</button>
+                  <button class="color-cabaret text-white p-2 border-0 btn">1200$</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          
+
           <!-- pagination -->
 
           <div class="d-flex justify-content-center py-4">
@@ -240,6 +393,7 @@
 
 
         </div>
+        
 
       </div>
     </section>
@@ -330,6 +484,18 @@
       </ul>
     </div>
   </footer>
+
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
 
 </body>
 
