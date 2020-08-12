@@ -9,7 +9,7 @@
   outline: none;
 }
 
-.main-container{
+.main-container {
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -18,13 +18,28 @@ ul {
   list-style: none;
   margin: 0;
 }
-p{
+
+strong {
+  font-family: helvetica-neue-bold, serif;
+}
+
+span {
+  font-family: helvetica-neue-light, serif;
+}
+
+label {
+  font-family: helvetica-neue-medium, serif;
+}
+
+
+p {
   margin: 0;
+  font-family: gotham-rounded-light, serif;
 }
 
 a {
   text-decoration: none;
-  color:$color-grey;
+  color: $color-grey;
 
 
   &:hover {
@@ -33,8 +48,12 @@ a {
   }
 }
 
-i{
-  color:$color-grey;
+cite {
+  font-family: gotham-bold;
+}
+
+i {
+  color: $color-grey;
 }
 
 img {

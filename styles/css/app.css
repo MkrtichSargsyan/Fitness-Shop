@@ -34,8 +34,18 @@ ul {
   list-style: none;
   margin: 0; }
 
+strong {
+  font-family: helvetica-neue-bold, serif; }
+
+span {
+  font-family: helvetica-neue-light, serif; }
+
+label {
+  font-family: helvetica-neue-medium, serif; }
+
 p {
-  margin: 0; }
+  margin: 0;
+  font-family: gotham-rounded-light, serif; }
 
 a {
   text-decoration: none;
@@ -43,6 +53,9 @@ a {
   a:hover {
     color: #dbdbdb;
     text-decoration: none; }
+
+cite {
+  font-family: gotham-bold; }
 
 i {
   color: #888888; }
@@ -52,15 +65,47 @@ img {
   height: 100%;
   object-fit: cover; }
 
-.helvetica {
-  font-family: Helvetica Neue Light; }
-
 .logo-font {
   font-family: 'Playball', cursive;
   font-size: 36px; }
   @media (max-width: 600px) {
     .logo-font {
       font-size: 24px; } }
+
+@font-face {
+  font-family: gotham-bold;
+  src: url(../../../assets/Gotham_Bold.otf); }
+
+@font-face {
+  font-family: gotham-rounded-light;
+  src: url(../../../assets/Gotham_Rounded_Light.otf); }
+
+@font-face {
+  font-family: helvetica-neue-light;
+  src: url(../../../assets/helvetica-neue-light.ttf); }
+
+@font-face {
+  font-family: helvetica-neue-bold;
+  src: url(../../../assets/HelveticaNeue-Bold.otf); }
+
+@font-face {
+  font-family: helvetica-neue-medium;
+  src: url(../../../assets/HelveticaNeue-Medium.otf); }
+
+.gotham-bold {
+  font-family: gotham-bold, serif; }
+
+.gotham-rounded-light {
+  font-family: gotham-rounded-light; }
+
+.helvetica-neue-light {
+  font-family: helvetica-neue-light; }
+
+.helvetica-neue-bold {
+  font-family: helvetica-neue-bold; }
+
+.helvetica-neue-medium {
+  font-family: helvetica-neue-medium; }
 
 .showcase-form * {
   height: 100%;
