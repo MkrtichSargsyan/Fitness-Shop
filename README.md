@@ -2,20 +2,23 @@
 
 > This project is for selling gym goods.
 
-![screenshot](./app_screenshot.png)
+
+![screenshot](./screenshot.png)
 
 
-Additional description about the project and its features.
+> This project is based on an online shop for electronics. Design is followed from this website https://www.behance.net/gallery/24796463/ZATTIX , but instead of a shop of electronics I created gym goods selling website
 
 ## Built With
 
 - HTML
 - CSS3
 - Font awesome icons
+- Scss
+- Bootstrap 4
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com)
+[Live Demo Link](https://mkrtichsargsyan.github.io/Fitness-Shop/)
 
 ## To get a local copy up and running follow these simple example steps.
 
@@ -31,6 +34,14 @@ Clone the project locally.
 ### Deployment
 
 Install and run a live server plugin on you IDE/Text editor and run it from the root directory.
+
+If want to edit the files using SASS compiler:
+
+1. Install a SASS processor;
+2. Run npm install;
+3. Run npm run sass;
+
+And edit the .scss files.
 
 ## Authors
 
