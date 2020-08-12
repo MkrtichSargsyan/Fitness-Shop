@@ -1,13 +1,10 @@
 footer {
-
   .footer-top {
     color: $color-grey;
-
 
     .footer-logo {
       height: 100px;
       border-radius: 50%;
-
 
       .footer-logo-img {
         width: 100px;
@@ -22,12 +19,11 @@ footer {
 
     .navigation,
     .categories {
-
       p {
         margin-bottom: 10px;
       }
 
-      & div > div{
+      & div > div {
         border-top: 1px solid $color-cabaret;
       }
     }
@@ -35,22 +31,18 @@ footer {
     .navigation,
     .country-language,
     .categories {
-
       & h5 {
         color: $color-cabaret;
-
       }
     }
 
     .country-language {
-
-
       p,
       h5 {
         margin: 0;
       }
 
-      & div>span {
+      & div > span {
         width: 100px;
         padding: 10px 0;
         border: 1px solid $color-grey;
@@ -59,7 +51,7 @@ footer {
     }
   }
 
-  .footer-bottom{ 
+  .footer-bottom {
     border-top: 1px solid #000;
   }
 }

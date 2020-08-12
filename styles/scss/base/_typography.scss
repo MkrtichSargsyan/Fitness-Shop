@@ -4,11 +4,10 @@
 
   @media (max-width: 600px) {
     & {
-      font-size: 24px
+      font-size: 24px;
     }
   }
 }
-
 
 @font-face {
   font-family: gotham-bold;
@@ -40,17 +39,17 @@
 }
 
 .gotham-rounded-light {
-  font-family: gotham-rounded-light;
+  font-family: gotham-rounded-light, serif;
 }
 
 .helvetica-neue-light {
-  font-family: helvetica-neue-light;
+  font-family: helvetica-neue-light, serif;
 }
 
 .helvetica-neue-bold {
-  font-family: helvetica-neue-bold;
+  font-family: helvetica-neue-bold, serif;
 }
 
 .helvetica-neue-medium {
-  font-family: helvetica-neue-medium;
+  font-family: helvetica-neue-medium, serif;
 }

@@ -1,21 +1,22 @@
 @import "../base/variables";
 
-.showcase{
+.showcase {
   background-image: url("../../../images/showcase-image.jpg");
 }
 
-.search-showcase{
+.search-showcase {
   background-image: url("../../../images/arnold.jpg");
 }
 
-.showcase, .search-showcase {
+.showcase,
+.search-showcase {
   margin-top: 60px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
 
-  &:before {
+  &::before {
     content: '';
     position: absolute;
     top: 0;
@@ -26,14 +27,13 @@
     background: $color-cabaret;
   }
 
-  &>div *{
+  & > div * {
     z-index: 1000;
   }
 
   @media only screen and (max-width: 767px) {
-    & .quote{
+    & .quote {
       font-size: 18px;
     }
   }
-
 }

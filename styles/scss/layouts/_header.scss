@@ -7,25 +7,20 @@ header {
   margin: 0 auto;
   position: fixed;
 
-
-  @media(min-width: 992px) {
-    & ul{
+  @media (min-width: 992px) {
+    & ul {
       width: 300px;
-    }     
+    }
   }
 
-  @media(max-width: 992px) {
-
+  @media (max-width: 992px) {
     display: flex;
 
-    & li.user-image{
+    & li.user-image {
       width: 50px;
       height: 50px;
-    }    
-    
+    }
   }
-
-  
 
   .header-logo-img {
     width: 50px;
@@ -50,7 +45,6 @@ header {
     display: flex;
     align-items: center;
 
-
     li:not(:last-child) {
       margin-right: 15px;
     }
@@ -72,4 +66,3 @@ header {
     }
   }
 }
-

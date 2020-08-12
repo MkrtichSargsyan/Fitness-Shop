@@ -1,6 +1,6 @@
 # Fitness shop
 
-> One paragraph statement about the project.
+> This project is for selling gym goods.
 
 ![screenshot](./app_screenshot.png)
 

@@ -31,7 +31,6 @@ label {
   font-family: helvetica-neue-medium, serif;
 }
 
-
 p {
   margin: 0;
   font-family: gotham-rounded-light, serif;
@@ -41,7 +40,6 @@ a {
   text-decoration: none;
   color: $color-grey;
 
-
   &:hover {
     color: rgb(219, 219, 219);
     text-decoration: none;
@@ -49,7 +47,7 @@ a {
 }
 
 cite {
-  font-family: gotham-bold;
+  font-family: gotham-bold, serif;
 }
 
 i {

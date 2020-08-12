@@ -15,7 +15,7 @@
   "scripts": {
     "test": "npm run webhint && npm run stylelint && echo \"✅✅✅ All tests passed ✅✅✅\"",
     "webhint": "npx hint .",
-    "stylelint": "npx stylelint **/*.css",
+    "stylelint": "npx stylelint **/*.scss",
     "sass":"node-sass styles/scss/main.scss styles/css/app.css -w"
   },
   "repository": {
