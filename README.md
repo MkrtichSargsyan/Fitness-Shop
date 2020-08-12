@@ -2,7 +2,7 @@
 
 > This project is for selling gym goods.
 
-![screenshot] <img src="images/screenshot.png"> 
+![screenshot](/images/screenshot.png)
 
 
 > This project is based on an online shop for electronics. Design is followed from this website https://www.behance.net/gallery/24796463/ZATTIX , but instead of a shop of electronics I created gym goods selling website
