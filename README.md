@@ -1,6 +1,6 @@
 # Fitness shop
 
-> This project is for selling gym goods.
+> This project is for selling gym goods
 
 ![screenshot](/images/screenshot.png)
 
@@ -28,29 +28,28 @@
 
 
 
-
 ## To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-Clone the project locally.
+Clone the project locally
 
 ### Linters
 
 1. run `npm install`.
-2. run `npm run test` to check the Html and CSS files.
+2. run `npm run test` to check the Html and CSS files
 
 ### Deployment
 
-Install and run a live server plugin on you IDE/Text editor and run it from the root directory.
+Install and run a live server plugin on you IDE/Text editor and run it from the root directory
 
 If want to edit the files using SASS compiler:
 
-1. Install a SASS processor;
-2. Run npm install;
-3. Run npm run sass;
+1. Install a SASS processor
+2. Run npm install
+3. Run npm run sass
 
-And edit the .scss files.
+And edit the .scss files
 
 ## Author
 
