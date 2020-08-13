@@ -22,5 +22,13 @@
         grid-template-columns: 1fr 1fr;
       }
     }
+
+    
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .items-section {
+    margin-top: 100px;
   }
 }

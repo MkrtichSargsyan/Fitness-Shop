@@ -52,7 +52,7 @@ If want to edit the files using SASS compiler:
 
 And edit the .scss files.
 
-## Authors
+## Author
 
 👤 **Mkrtich Sargsyan**
 

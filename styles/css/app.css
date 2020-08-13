@@ -165,6 +165,10 @@ img {
     .items-segment .all-items {
       grid-template-columns: 1fr 1fr; } }
 
+@media only screen and (max-width: 575px) {
+  .items-section {
+    margin-top: 100px; } }
+
 header {
   min-height: 62px;
   width: 100%;
@@ -252,8 +256,8 @@ header {
   .search-showcase > div * {
     z-index: 1000; }
   @media only screen and (max-width: 767px) {
-    .showcase .quote,
-    .search-showcase .quote {
+    .showcase h1,
+    .search-showcase h1 {
       font-size: 18px; } }
 
 .best-sellers > div {
@@ -277,6 +281,10 @@ header {
 #my-accordion button:focus {
   text-decoration: none;
   color: #d35266; }
+
+@media only screen and (max-width: 575px) {
+  #my-accordion {
+    margin-top: 100px; } }
 
 footer .footer-top {
   color: #888; }
