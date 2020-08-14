@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.main-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+strong {
+  font-family: helvetica-neue-bold, serif;
+}
+
+span {
+  font-family: helvetica-neue-light, serif;
+}
+
+label {
+  font-family: helvetica-neue-medium, serif;
+}
+
+p {
+  margin: 0;
+  font-family: gotham-rounded-light, serif;
+}
+
+a {
+  text-decoration: none;
+  color: $color-grey;
+
+  &:hover {
+    color: rgb(219, 219, 219);
+    text-decoration: none;
+  }
+}
+
+cite {
+  font-family: gotham-bold, serif;
+}
+
+i {
+  color: $color-grey;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

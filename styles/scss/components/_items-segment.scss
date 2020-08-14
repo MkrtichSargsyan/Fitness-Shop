@@ -1,0 +1,32 @@
+.items-segment {
+  .card {
+    box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.64);
+  }
+
+  .heading {
+    border-bottom: 1px solid $color-grey;
+  }
+
+  .all-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+
+    & .all-items-image-container {
+      width: 100%;
+      height: 150px;
+    }
+
+    @media only screen and (max-width: 991px) {
+      & {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .items-section {
+    margin-top: 100px;
+  }
+}

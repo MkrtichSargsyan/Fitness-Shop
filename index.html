@@ -4,14 +4,564 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='icon' href="#">
+  <!-- icon link -->
+  <link rel='icon' href="images/logo.jpg">
+  <!-- bootstrap link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- font awesome link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <!-- google fonts link -->
+  <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+  <!-- app css link -->
+  <link rel="stylesheet" href="styles/css/app.css">
+  <title>FITSY</title>
 </head>
 
-<body>
-  <h1>hello world</h1>
+<body class="main-container">
+
+  <!-- header -->
+
+  <header class="color-eclipse fixed-top">
+
+    <nav class="container text-white d-flex justify-content-around justify-content-sm-between align-items-center py-1">
+      <ul class="d-flex left-nav">
+        <li>
+          <i class="fas fa-home"></i>
+          <a href="#" class="d-none d-md-inline">Home</a>
+        </li>
+        <li>
+          <i class="fas fa-list-alt mr-1"></i>
+          <a href="#" class="d-none d-md-inline">Collections</a>
+        </li>
+        <li>
+          <i class="fas fa-search mr-1"></i>
+          <a href="search-page.html" class="d-none d-md-inline">Search</a>
+        </li>
+      </ul>
+
+      <p class="m-0 mx-1 d-lg-none"><a class="logo-font text-cabaret" href="search-page.html">FITSY</a></p>
+
+      <div class="header-logo d-lg-flex align-items-center d-none">
+        <p class="m-0 mr-3 logo-font">FITSY</p>
+        <div class="header-logo-img">
+          <a href="index.html">
+            <img src="images/logo.jpg" alt="header-logo">
+          </a>
+        </div>
+      </div>
+
+      <ul class="d-flex right-nav">
+        <li>
+          <i class="fas fa-envelope"></i>
+        </li>
+        <li class="helvetica-neue-bold">Mkrtich Sargsyan</li>
+        <li class="user-image">
+          <img src="images/me.jpg" alt="user-image">
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <!-- showcase section -->
+
+    <section class="showcase d-none d-sm-block">
+
+      <div class="d-flex flex-column py-4">
+        <div class="container quote text-eclipse h3 mx-auto text-center">
+          <div class="d-inline-block text-right">
+            <h1>
+              <cite class="text-center gothamBold">“If you think lifting is dangerous, try being weak. Being weak is
+                dangerous.”</cite>
+            </h1>
+            <br>
+            <span class="helvetica-neue-medium">— Bret Contreras, sports scientist</span>
+          </div>
+        </div>
+
+        <form action="search-page.html"
+          class="showcase-form px-5 px-md-0 my-5 mx-md-auto d-flex flex-column flex-md-row">
+
+          <select id="category" name="category" class="mr-md-2">
+            <option value="Nutrition">Nutrition</option>
+            <option value="Dumbells">Dumbells</option>
+            <option value="Resistance Bands">Resistance Bands</option>
+
+          </select>
+
+          <input class="showcase-search mr-md-2 my-2 my-md-0" type="text" placeholder="What do you search for?">
+          <input class="showcase-country mr-md-2" type="text" placeholder="Country">
+          <button type="submit"
+            class="showcase-submit-button color-eclipse text-grey mt-3 mt-md-0 mx-auto">Submit</button>
+        </form>
+
+      </div>
+
+    </section>
+
+    <!-- best-sellers section -->
+
+    <section class="best-sellers pb-5 pt-3  d-none d-md-block">
+      <div class="container">
+
+        <div class="my-carousel d-flex flex-column px-0">
+
+          <h2 class="text-grey">Best Sellers</h2>
+
+          <div class="row">
+            <div id="carouselSlides" class="carousel slide " data-ride="carousel">
+              <div class="carousel-inner mx-auto w-75">
+
+                <div class="carousel-item active">
+                  <div class="d-flex h-100 no-gutters">
+                    <img src="images/dumbell_images/d2.jpg" class="slider-img col-6" alt="d2">
+                    <article class="d-flex flex-column pl-4 col-6 justify-content-between no-gutters">
+                      <h4 class="card-title text-center">Dumbell</h4>
+                      <p class="card-text text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                        laudantium laborum culpa officiis delectus ex odio nostrum impedit autem quidem.</p>
+                      <div class="d-flex justify-content-center">
+                        <button type="submit" class="px-3 py-2 mx-1">$10</button>
+                        <button type="submit" class="px-3 py-2 mx-1">Buy</button>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="d-flex h-100 no-gutters">
+                    <img src="images/gym_clothes/c2.jpg" class="slider-img col-6" alt="clothe">
+                    <article class="d-flex flex-column pl-4 col-6 justify-content-between no-gutters">
+                      <h4 class="card-title text-center">Clothes</h4>
+                      <p class="card-text text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                        laudantium laborum culpa officiis delectus ex odio nostrum impedit autem quidem.</p>
+                      <div class="d-flex justify-content-center">
+                        <button type="submit" class="px-3 py-2 mx-1">$10</button>
+                        <button type="submit" class="px-3 py-2 mx-1">Buy</button>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="d-flex h-100 no-gutters">
+                    <img src="images/nutrition_images/n2.jpeg" class="slider-img col-6" alt="d2">
+                    <article class="d-flex flex-column pl-4 col-6 justify-content-between no-gutters">
+                      <h4 class="card-title text-center">Nutrition</h4>
+                      <p class="card-text text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                        laudantium laborum culpa officiis delectus ex odio nostrum impedit autem quidem.</p>
+                      <div class="d-flex justify-content-center">
+                        <button type="submit" class="px-3 py-2 mx-1">$10</button>
+                        <button type="submit" class="px-3 py-2 mx-1">Buy</button>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+              </div>
+
+              <a class="carousel-control-prev prev-slide" href="#carouselSlides" role="button" data-slide="prev">
+                <span><i class="fas fa-hand-point-left fa-2x text-cabaret"></i></span>
+              </a>
+              <a class="carousel-control-next next-slide" href="#carouselSlides" role="button" data-slide="next">
+                <span><i class="fas fa-hand-point-right fa-2x text-cabaret"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- main section -->
+    <section class="bg-light items-section">
+      <div class="container">
+
+        <!-- nutrition items -->
+        <div class="items-segment my-5">
+
+          <div class="heading d-flex mb-4 align-items-baseline pb-2">
+            <i class="fab fa-nutritionix mr-4 fa-2x"></i>
+            <p class="text-grey">
+              <strong class="h3">Nutrition</strong>
+              <span class="d-none d-md-inline">(Carbohydrates,Proteins,Energy drinks ...)</span>
+            </p>
+          </div>
+
+          <div class="all-items">
+
+            <div class="card">
+              <div class="all-items-image-container">
+                <img src="images/nutrition_images/n1.jpeg" alt="dmb">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="all-items-image-container">
+                <img src="images/nutrition_images/n2.jpeg" alt="dmb">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="all-items-image-container">
+                <img src="images/nutrition_images/n3.png" alt="dmb">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="all-items-image-container">
+                <img src="images/nutrition_images/n4.jpeg" alt="dmb">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- dumbell items -->
+
+        <div class="items-segment mb-5">
+
+          <div class="heading d-flex mb-4 align-items-baseline pb-2">
+            <i class="fab fa-nutritionix mr-4 fa-2x"></i>
+            <p class="text-grey">
+              <strong class="h3">Dumbells</strong>
+              <span class="d-none d-md-inline">(Fixed,Adjustable,Kettlebells ...)</span>
+            </p>
+          </div>
+
+          <div class="all-items">
+
+            <div class="card">
+              <div class="all-items-image-container">
+                <img src="images/dumbell_images/d1.jpeg" alt="dmb">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">New</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">2000$</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="all-items-image-container">
+                <img src="images/dumbell_images/d2.jpg" alt="dmb">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">New</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">3234$</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="all-items-image-container">
+                <img src="images/dumbell_images/d3.jpg" alt="dmb">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">New</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">4320$</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="all-items-image-container">
+                <img src="images/dumbell_images/d4.jpg" alt="dmb">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">New</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">550$</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- gym_clothes -->
+
+        <div class="items-segment my-5">
+
+          <div class="heading d-flex mb-4 align-items-baseline pb-2">
+            <i class="fab fa-nutritionix mr-4 fa-2x"></i>
+            <p class="text-grey">
+              <strong class="h3">gym_clothes</strong>
+              <span class="d-none d-md-inline">(T-Shirts,Sweatshirts,Sweatpants ...)</span>
+            </p>
+          </div>
+
+          <div class="all-items">
+
+            <div class="card">
+              <div class="all-items-image-container">
+                <img src="images/gym_clothes/c1.jpeg" alt="clothes">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="all-items-image-container">
+                <img src="images/gym_clothes/c2.jpg" alt="clothes">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="all-items-image-container">
+                <img src="images/gym_clothes/c3.jpg" alt="clothes">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="all-items-image-container">
+                <img src="images/gym_clothes/c4.jpg" alt="clothes">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- exercise_machines -->
+
+        <div class="items-segment my-5">
+
+          <div class="heading d-flex mb-4 align-items-baseline pb-2">
+            <i class="fab fa-nutritionix mr-4 fa-2x"></i>
+            <p class="text-grey">
+              <strong class="h3">exercise_machines</strong>
+              <span class="d-none d-md-inline">(Stationary bicycle,Treadmill,Ankle weights ...)</span>
+            </p>
+          </div>
+
+          <div class="all-items">
+
+            <div class="card">
+              <div class="all-items-image-container">
+                <img src="images/exercise_machines/m1.webp" alt="machines">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="all-items-image-container">
+                <img src="images/exercise_machines/m2.webp" alt="machines">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="all-items-image-container">
+                <img src="images/exercise_machines/m3.jpeg" alt="machines">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="all-items-image-container">
+                <img src="images/exercise_machines/m4.jpeg" alt="machines">
+              </div>
+              <p class="card-title text-center h5 mt-2 text-grey">Lorem ipsum</p>
+              <p class="pl-2 text-cabaret">Used</p>
+              <p class="pl-2 mt-3 text-grey">Lorem, ipsum dolor.</p>
+              <div class="mt-3 px-2 d-flex justify-content-between align-items-center">
+                <span><i class="far fa-plus-square fa-2x"></i></span>
+                <span class="h5 text-cabaret">450$</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- footer -->
+
+  <footer class="color-eclipse pt-4">
+    <div class="footer-top container row mx-auto justify-content-between">
+
+      <div class="about-page col-md-12 col-lg-5 mb-5 text-center">
+
+        <div class=" d-flex flex-column align-items-center justify-content-center">
+          <div class="footer-logo d-flex align-items-center">
+            <p class="m-0 mr-3 logo-font">FITSY</p>
+            <div class="footer-logo-img">
+              <img src="images/logo.jpg" alt="header-logo">
+            </div>
+          </div>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur autem, a, vel esse distinctio
+            exercitationem eveniet, voluptatem quidem rerum culpa asperiores. Mollitia, nemo dolore doloremque
+            recusandae aspernatur quis veniam vero.</p>
+        </div>
+
+      </div>
+
+      <div class="categories col-6 col-md-4 col-lg-2">
+        <div class=" text-center">
+          <h5 class="mb-4">CATEGORIES</h5>
+          <div class="pt-3">
+            <p>Dumbells</p>
+            <p>Nutrition</p>
+            <p>gym_clothes</p>
+            <p>Dumbells</p>
+            <p>Nutrition</p>
+            <p>gym_clothes</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation col-6 col-md-4 col-lg-2 mb-4">
+
+        <div class="text-center">
+          <h5 class="mb-4">NAVIGATION</h5>
+          <div class="pt-3">
+            <p>Home</p>
+            <p>Collections</p>
+            <p>User page</p>
+            <p>Home</p>
+            <p>Collections</p>
+            <p>User page</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div
+        class="country-language col-8 mb-5 mx-auto col-md-4 col-lg-3 d-flex flex-column justify-content-center align-content-between">
+        <div class="d-flex align-items-center justify-content-between">
+          <h5>COUNTRY</h5>
+          <span>Armenia</span>
+        </div>
+        <div class="d-flex my-3 align-items-center justify-content-between">
+          <h5>Language</h5>
+          <span>Armenian</span>
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+          <h5>Currency</h5>
+          <span>
+            <i class="fab fa-btc"></i>
+            <span>Bitcoin</span>
+          </span>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-bottom container py-3 d-flex flex-column flex-lg-row justify-content-between text-center">
+      <p class="text-grey">
+        National Aeronautics and Space Administration
+        NASA Official: Brian Dunbar</p>
+      <ul class="footer-social d-flex justify-content-center">
+        <li><i class="fab fa-yahoo"></i></li>
+        <li><i class="fab fa-google ml-2"></i></li>
+        <li><i class="fab fa-linkedin-in ml-2"></i></li>
+        <li><i class="fab fa-twitter ml-2"></i></li>
+        <li><i class="fab fa-facebook-f ml-2"></i></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+
 </body>
 
 </html>

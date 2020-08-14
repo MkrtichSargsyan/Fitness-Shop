@@ -1,0 +1,55 @@
+.logo-font {
+  font-family: 'Playball', cursive;
+  font-size: 36px;
+
+  @media (max-width: 600px) {
+    & {
+      font-size: 24px;
+    }
+  }
+}
+
+@font-face {
+  font-family: gotham-bold;
+  src: url(../../../assets/Gotham_Bold.otf);
+}
+
+@font-face {
+  font-family: gotham-rounded-light;
+  src: url(../../../assets/Gotham_Rounded_Light.otf);
+}
+
+@font-face {
+  font-family: helvetica-neue-light;
+  src: url(../../../assets/helvetica-neue-light.ttf);
+}
+
+@font-face {
+  font-family: helvetica-neue-bold;
+  src: url(../../../assets/HelveticaNeue-Bold.otf);
+}
+
+@font-face {
+  font-family: helvetica-neue-medium;
+  src: url(../../../assets/HelveticaNeue-Medium.otf);
+}
+
+.gotham-bold {
+  font-family: gotham-bold, serif;
+}
+
+.gotham-rounded-light {
+  font-family: gotham-rounded-light, serif;
+}
+
+.helvetica-neue-light {
+  font-family: helvetica-neue-light, serif;
+}
+
+.helvetica-neue-bold {
+  font-family: helvetica-neue-bold, serif;
+}
+
+.helvetica-neue-medium {
+  font-family: helvetica-neue-medium, serif;
+}

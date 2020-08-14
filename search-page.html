@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- icon link -->
+  <link rel='icon' href="images/logo.jpg">
+  <!-- bootstrap link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <!-- google fonts link -->
+  <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+  <!-- app css link -->
+  <link rel="stylesheet" href="styles/css/app.css">
+  <title>FITSY</title>
+</head>
+
+<body class="main-container">
+
+  <header class="color-eclipse fixed-top">
+
+    <nav class="container text-white d-flex justify-content-around justify-content-sm-between align-items-center py-1">
+      <ul class="d-flex left-nav">
+        <li>
+          <i class="fas fa-home"></i>
+          <a href="#" class="d-none d-md-inline">Home</a>
+        </li>
+        <li>
+          <i class="fas fa-list-alt mr-1"></i>
+          <a href="#" class="d-none d-md-inline">Collections</a>
+        </li>
+        <li>
+          <i class="fas fa-search mr-1"></i>
+          <a href="search-page.html" class="d-none d-md-inline">Search</a>
+        </li>
+      </ul>
+
+      <p class="m-0 mx-1 d-lg-none"><a class="logo-font text-cabaret" href="index.html">FITSY</a></p>
+
+      <div class="header-logo d-lg-flex align-items-center d-none">
+        <p class="m-0 mr-3 logo-font">FITSY</p>
+        <div class="header-logo-img">
+          <a href="index.html">
+            <img src="images/logo.jpg" alt="header-logo">
+          </a>
+        </div>
+      </div>
+
+      <ul class="d-flex right-nav">
+        <li>
+          <i class="fas fa-envelope"></i>
+        </li>
+        <li>Mkrtich Sargsyan</li>
+        <li class="user-image">
+          <img src="images/me.jpg" alt="user-image">
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- showcase section -->
+
+    <section class="search-showcase d-none d-sm-block">
+
+      <div class="d-flex flex-column py-4">
+        <div class="container quote text-eclipse h3 mx-auto text-center">
+          <div class="d-inline-block text-right">
+            <h1>
+              <cite class="text-center">“Bodybuilding is much like any other sport. To be successful, you must dedicate
+                yourself 100% to your training, diet and mental approach”</cite>
+            </h1>
+            <br>
+            <span class="helvetica-neue-medium">Arnold Schwarzenegger</span>
+          </div>
+        </div>
+
+        <form action="search-page.html"
+          class="showcase-form px-5 px-md-0 my-5 mx-md-auto d-flex flex-column flex-md-row">
+
+          <select id="category" name="category" class="mr-md-2">
+            <option value="Nutrition">Nutrition</option>
+            <option value="Dumbells">Dumbells</option>
+            <option value="Resistance Bands">Resistance Bands</option>
+
+          </select>
+
+          <input class="showcase-search mr-md-2 my-2 my-md-0" type="text" placeholder="What do you search for?">
+          <input class="showcase-country mr-md-2" type="text" placeholder="Country">
+          <button type="submit"
+            class="showcase-submit-button color-eclipse text-grey mt-3 mt-md-0 mx-auto">Submit</button>
+        </form>
+
+      </div>
+
+    </section>
+
+    <!-- result section -->
+
+    <section class="result bg-light">
+      <div class="container border d-flex flex-column flex-md-row p-0">
+
+        <!-- accordeon -->
+
+        <div class="accordion col-12 d-md-none pt-2" id="my-accordion">
+
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link text-cabaret" type="button" data-toggle="collapse"
+                  data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Type
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#my-accordion">
+              <div class="filter-type ml-4 p-3">
+
+                <div>
+                  <input type="checkbox" id="entire" name="entire" checked>
+                  <label for="entire">Entire Place </label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="private" name="private">
+                  <label for="private">Private Room</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="shared" name="shared">
+                  <label for="shared">Shared Room</label>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed text-cabaret" type="button" data-toggle="collapse"
+                  data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Size
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#my-accordion">
+              <div class="filter-type ml-4 p-3">
+                <div>
+                  <input type="checkbox" id="small" name="small" checked>
+                  <label for="small">2 - 4 rooms</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="big" name="bog">
+                  <label for="big">5 + rooms</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="custom" name="custom">
+                  <label for="custom">Custom</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed text-cabaret" type="button" data-toggle="collapse"
+                  data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Price Range
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#my-accordion">
+              <div class="filter-type ml-4 p-3">
+                <div>
+                  <input type="checkbox" id="cheap" name="cheap" checked>
+                  <label for="cheap">10$ - 100$</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="mid" name="mid">
+                  <label for="mid">100$ - 500$</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="exp" name="exp">
+                  <label for="exp">500$ - 1000$</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="extra" name="extra">
+                  <label for="extra">+1000$</label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- filter -->
+
+        <aside class="filter d-none d-md-block col-md-3 pt-3">
+
+          <div class="filter-type">
+            <h5>Type</h5>
+            <div>
+              <div>
+                <input type="checkbox" id="entire1" name="entire" checked>
+                <label for="entire1">Entire Place </label>
+              </div>
+              <div>
+                <input type="checkbox" id="private1" name="private">
+                <label for="private1">Private Room</label>
+              </div>
+              <div>
+                <input type="checkbox" id="shared1" name="shared">
+                <label for="shared">Shared Room</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-type">
+            <h5>Size</h5>
+            <div>
+              <div>
+                <input type="checkbox" id="small1" name="small" checked>
+                <label for="small1">2 - 4 rooms</label>
+              </div>
+              <div>
+                <input type="checkbox" id="big1" name="bog">
+                <label for="big1">5 + rooms</label>
+              </div>
+              <div>
+                <input type="checkbox" id="custom1" name="custom">
+                <label for="custom1">Custom</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-type">
+            <h5>Price Range</h5>
+            <div>
+              <div>
+                <input type="checkbox" id="cheap1" name="cheap" checked>
+                <label for="cheap1">10$ - 100$</label>
+              </div>
+              <div>
+                <input type="checkbox" id="mid1" name="mid">
+                <label for="mid1">100$ - 500$</label>
+              </div>
+              <div>
+                <input type="checkbox" id="exp1" name="exp">
+                <label for="exp1">500$ - 1000$</label>
+              </div>
+              <div>
+                <input type="checkbox" id="extra1" name="extra">
+                <label for="extra1">+1000$</label>
+              </div>
+            </div>
+          </div>
+
+        </aside>
+
+        <!-- finded - items -->
+
+        <div class="finded-items col-md-9">
+          <p class="py-3">138 results for "Flat" Search at San Francisco in Category Real Estate</p>
+
+          <div class="d-flex border py-3 my-2 flex-column flex-md-row">
+            <div class="col-md-5 col-lg-4">
+              <img src="images/logo.jpg" alt="">
+            </div>
+            <article class="col-md-7 col-lg-8 d-flex flex-column justify-content-center">
+              <h4 class="text-eclipse">Flat with big living</h4>
+              <p class="text-cabaret">200 M, Rent</p>
+              <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloremque officia, quas ad
+                aspernatur
+                ipsa molestiae. </p>
+              <p class="mb-2">
+                <strong class="mr-2">Location</strong>Lorem ipsum dolor sit amet consectetur.
+              </p>
+              <div class="d-flex justify-content-between mt-4">
+                <p>23 Nov. 2020</p>
+                <div>
+                  <button class="color-cabaret text-white p-2 border-0 btn">Give a Call</button>
+                  <button class="color-cabaret text-white p-2 border-0 btn">1200$</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="d-flex border py-3 my-2 flex-column flex-md-row">
+            <div class="col-md-5 col-lg-4">
+              <img src="images/logo.jpg" alt="">
+            </div>
+            <article class="col-md-7 col-lg-8 d-flex flex-column justify-content-center">
+              <h4 class="text-eclipse">Flat with big living</h4>
+              <p class="text-cabaret">200 M, Rent</p>
+              <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloremque officia, quas ad
+                aspernatur
+                ipsa molestiae. </p>
+              <p class="mb-2">
+                <strong class="mr-2">Location</strong>Lorem ipsum dolor sit amet consectetur.
+              </p>
+              <div class="d-flex justify-content-between mt-4">
+                <p>23 Nov. 2020</p>
+                <div>
+                  <button class="color-cabaret text-white p-2 border-0 btn">Give a Call</button>
+                  <button class="color-cabaret text-white p-2 border-0 btn">1200$</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="d-flex border py-3 my-2 flex-column flex-md-row">
+            <div class="col-md-5 col-lg-4">
+              <img src="images/logo.jpg" alt="">
+            </div>
+            <article class="col-md-7 col-lg-8 d-flex flex-column justify-content-center">
+              <h4 class="text-eclipse">Flat with big living</h4>
+              <p class="text-cabaret">200 M, Rent</p>
+              <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloremque officia, quas ad
+                aspernatur
+                ipsa molestiae. </p>
+              <p class="mb-2">
+                <strong class="mr-2">Location</strong>Lorem ipsum dolor sit amet consectetur.
+              </p>
+              <div class="d-flex justify-content-between mt-4">
+                <p>23 Nov. 2020</p>
+                <div>
+                  <button class="color-cabaret text-white p-2 border-0 btn">Give a Call</button>
+                  <button class="color-cabaret text-white p-2 border-0 btn">1200$</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="d-flex border py-3 my-2 flex-column flex-md-row">
+            <div class="col-md-5 col-lg-4">
+              <img src="images/logo.jpg" alt="">
+            </div>
+            <article class="col-md-7 col-lg-8 d-flex flex-column justify-content-center">
+              <h4 class="text-eclipse">Flat with big living</h4>
+              <p class="text-cabaret">200 M, Rent</p>
+              <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloremque officia, quas ad
+                aspernatur
+                ipsa molestiae. </p>
+              <p class="mb-2">
+                <strong class="mr-2">Location</strong>Lorem ipsum dolor sit amet consectetur.
+              </p>
+              <div class="d-flex justify-content-between mt-4">
+                <p>23 Nov. 2020</p>
+                <div>
+                  <button class="color-cabaret text-white p-2 border-0 btn">Give a Call</button>
+                  <button class="color-cabaret text-white p-2 border-0 btn">1200$</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- pagination -->
+
+          <div class="d-flex justify-content-center py-4">
+            <ul class="pagination">
+              <li class="page-item mr-2"><a class="page-link text-grey" href="#">1</a></li>
+              <li class="page-item mr-2"><a class="page-link text-white color-cabaret" href="#">2</a></li>
+              <li class="page-item mr-2"><a class="page-link text-grey" href="#">3</a></li>
+              <li class="page-item mr-2"><a class="page-link text-grey" href="#">4</a></li>
+              <li class="page-item mr-2"><a class="page-link text-grey" href="#">5</a></li>
+              <li class="page-item mr-2"><a class="page-link text-grey" href="#">6</a></li>
+              <li class="page-item mr-2"><a class="page-link border-0 bg-light" href="#">...</a></li>
+              <li class="page-item mr-2"><a class="page-link text-grey" href="#">7</a></li>
+            </ul>
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- footer -->
+
+  <footer class="color-eclipse pt-4">
+    <div class="footer-top container row mx-auto justify-content-between">
+
+      <div class="about-page col-md-12 col-lg-5 mb-5 text-center">
+
+        <div class=" d-flex flex-column align-items-center justify-content-center">
+          <div class="footer-logo d-flex align-items-center">
+            <p class="m-0 mr-3 logo-font">FITSY</p>
+            <div class="footer-logo-img">
+              <img src="images/logo.jpg" alt="header-logo">
+            </div>
+          </div>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur autem, a, vel esse distinctio
+            exercitationem eveniet, voluptatem quidem rerum culpa asperiores. Mollitia, nemo dolore doloremque
+            recusandae aspernatur quis veniam vero.</p>
+        </div>
+
+      </div>
+
+      <div class="categories col-6 col-md-4 col-lg-2">
+        <div class=" text-center">
+          <h5 class="mb-4">CATEGORIES</h5>
+          <div class="pt-3">
+            <p>Dumbells</p>
+            <p>Nutrition</p>
+            <p>Gym clothes</p>
+            <p>Dumbells</p>
+            <p>Nutrition</p>
+            <p>Gym clothes</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation col-6 col-md-4 col-lg-2 mb-4">
+
+        <div class="text-center">
+          <h5 class="mb-4">NAVIGATION</h5>
+          <div class="pt-3">
+            <p>Home</p>
+            <p>Collections</p>
+            <p>User page</p>
+            <p>Home</p>
+            <p>Collections</p>
+            <p>User page</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div
+        class="country-language col-8 mb-5 mx-auto col-md-4 col-lg-3 d-flex flex-column justify-content-center align-content-between">
+        <div class="d-flex align-items-center justify-content-between">
+          <h5>COUNTRY</h5>
+          <span>Armenia</span>
+        </div>
+        <div class="d-flex my-3 align-items-center justify-content-between">
+          <h5>Language</h5>
+          <span>Armenian</span>
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+          <h5>Currency</h5>
+          <span>
+            <i class="fab fa-btc"></i>
+            <span>Bitcoin</span>
+          </span>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-bottom container py-3 d-flex flex-column flex-lg-row justify-content-between text-center">
+      <p class="text-grey">
+        National Aeronautics and Space Administration
+        NASA Official: Brian Dunbar</p>
+      <ul class="footer-social d-flex justify-content-center">
+        <li><i class="fab fa-yahoo"></i></li>
+        <li><i class="fab fa-google ml-2"></i></li>
+        <li><i class="fab fa-linkedin-in ml-2"></i></li>
+        <li><i class="fab fa-twitter ml-2"></i></li>
+        <li><i class="fab fa-facebook-f ml-2"></i></li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+
+</body>
+
+
+</html>

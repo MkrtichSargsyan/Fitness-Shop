@@ -1,0 +1,38 @@
+.result {
+  .finded-items {
+    border-left: 1px solid #000;
+
+    button:hover {
+      cursor: pointer;
+      background-color: #d46475;
+    }
+
+    @media (max-width: 767px) {
+      & {
+        border: none;
+      }
+    }
+  }
+}
+
+.filter {
+  h5 {
+    border-bottom: 1px solid $color-grey;
+    margin: 20px 0;
+    padding-bottom: 20px;
+  }
+}
+
+#my-accordion {
+  button:active,
+  button:focus {
+    text-decoration: none;
+    color: #d35266;
+  }
+
+  @media only screen and (max-width: 575px) {
+    & {
+      margin-top: 100px;
+    }
+  }
+}
